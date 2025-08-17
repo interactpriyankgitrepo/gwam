@@ -104,15 +104,15 @@ This project implements a data pipeline using PySpark to process stock market an
 3. **Run the Pipeline**:
    - Execute the script: 
      ```bash
-     python process_stock_and_fund_data.py
+     python transform.py
      ```
 
 4. **Unit Tests**:
    - Run the unit tests using:
      ```bash
-     python -m unittest test_data_pipeline.py
+     python -m unittest UnitTesting.py
      ```
-
+## Recommendation is to run in databricks because of managed service and security compliance. It provides better collaborative environment.
 ## Approach
 
 - **Data Loading**: Reads JSON files from the specified path.
@@ -124,4 +124,5 @@ Explanation
 Script: The main script handles loading, transforming, and writing data. It supports deduplication and timestamp parsing.
 Unit Test: Tests the deduplication logic to ensure duplicates are removed based on stock_id.
 README: Provides setup instructions and an explanation of the pipeline's approach.
+
 This setup provides a complete solution for processing and transforming stock and mutual fund data using PySpark, including necessary unit tests and documentation.
